@@ -1,0 +1,146 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CZTRADE</title>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+
+    <div class="logo">
+      CZTRADE
+    </div>
+
+    <div class="live">
+      ● LIVE OTC MARKET
+    </div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Charts</a>
+      <a href="#">Signals</a>
+      <a href="#">History</a>
+    </nav>
+
+    <button class="login">
+      LOGIN
+    </button>
+
+  </header>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- LEFT -->
+    <div class="sidebar">
+
+      <h2>OTC PAIRS</h2>
+
+      <div class="pair active" onclick="changePair('EURUSD','EUR/USD OTC')">
+        EUR/USD OTC
+      </div>
+
+      <div class="pair" onclick="changePair('GBPJPY','GBP/JPY OTC')">
+        GBP/JPY OTC
+      </div>
+
+      <div class="pair" onclick="changePair('USDBRL','USD/BRL OTC')">
+        USD/BRL OTC
+      </div>
+
+      <div class="pair" onclick="changePair('AUDUSD','AUD/USD OTC')">
+        AUD/USD OTC
+      </div>
+
+      <div class="pair" onclick="changePair('EURJPY','EUR/JPY OTC')">
+        EUR/JPY OTC
+      </div>
+
+    </div>
+
+    <!-- CENTER -->
+    <div class="chart-section">
+
+      <div class="topbar">
+
+        <div class="timeframe">
+          <button>1m</button>
+          <button>5m</button>
+          <button>15m</button>
+        </div>
+
+        <div class="market">
+          MARKET TREND: SIDEWAYS
+        </div>
+
+      </div>
+
+      <iframe
+        id="chartFrame"
+        src="https://s.tradingview.com/widgetembed/?symbol=FX:EURUSD&interval=1&theme=dark"
+      ></iframe>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="signal-panel">
+
+      <h2>AI SIGNAL</h2>
+
+      <div class="buy-card">
+
+        <h1 id="signalType">
+          BUY
+        </h1>
+
+        <p id="currentPair">
+          EUR/USD OTC
+        </p>
+
+        <div class="strength">
+          STRENGTH: 91%
+        </div>
+
+      </div>
+
+      <div class="timer">
+
+        <h3>EXPIRY TIME</h3>
+
+        <div id="countdown">
+          00:45
+        </div>
+
+      </div>
+
+      <div class="analysis">
+
+        <h3>ANALYSIS</h3>
+
+        <p>RSI: 48</p>
+        <p>MACD: BULLISH</p>
+        <p>EMA: STRONG</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 CZTRADE
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+```

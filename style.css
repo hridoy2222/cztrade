@@ -1,0 +1,180 @@
+```css
+body{
+  margin:0;
+  background:#020817;
+  color:white;
+  font-family:Arial;
+}
+
+/* HEADER */
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px;
+  background:#06111f;
+  border-bottom:1px solid #0f172a;
+}
+
+.logo{
+  color:#22c55e;
+  font-size:35px;
+  font-weight:bold;
+}
+
+.live{
+  color:#22c55e;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 10px;
+}
+
+.login{
+  background:#22c55e;
+  border:none;
+  padding:12px 20px;
+  border-radius:10px;
+  color:white;
+}
+
+/* MAIN */
+
+.main{
+  display:grid;
+  grid-template-columns:250px 1fr 320px;
+  gap:20px;
+  padding:20px;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+  background:#06111f;
+  border-radius:20px;
+  padding:20px;
+}
+
+.sidebar h2{
+  margin-bottom:20px;
+}
+
+.pair{
+  background:#0f172a;
+  padding:15px;
+  margin-bottom:10px;
+  border-radius:12px;
+  cursor:pointer;
+}
+
+.pair:hover{
+  background:#1e293b;
+}
+
+.active{
+  border:1px solid #22c55e;
+}
+
+/* CHART */
+
+.chart-section{
+  background:#06111f;
+  border-radius:20px;
+  padding:20px;
+}
+
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:15px;
+}
+
+.timeframe button{
+  background:#0f172a;
+  color:white;
+  border:none;
+  padding:10px 15px;
+  border-radius:10px;
+  margin-right:5px;
+}
+
+.market{
+  background:#2563eb;
+  padding:10px 20px;
+  border-radius:10px;
+}
+
+iframe{
+  width:100%;
+  height:650px;
+  border:none;
+  border-radius:15px;
+}
+
+/* RIGHT */
+
+.signal-panel{
+  background:#06111f;
+  border-radius:20px;
+  padding:20px;
+}
+
+.buy-card{
+  background:#16a34a;
+  padding:25px;
+  border-radius:20px;
+}
+
+.buy-card h1{
+  font-size:45px;
+  margin:0;
+}
+
+.strength{
+  margin-top:15px;
+}
+
+.timer{
+  margin-top:20px;
+  background:#0f172a;
+  padding:20px;
+  border-radius:20px;
+  text-align:center;
+}
+
+#countdown{
+  font-size:40px;
+  color:#22c55e;
+  margin-top:10px;
+}
+
+.analysis{
+  margin-top:20px;
+  background:#0f172a;
+  padding:20px;
+  border-radius:20px;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  color:#94a3b8;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.main{
+  grid-template-columns:1fr;
+}
+
+iframe{
+  height:400px;
+}
+
+}
+```
