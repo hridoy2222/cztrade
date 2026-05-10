@@ -1,4 +1,3 @@
-```javascript
 function changePair(pair,name){
 
   document.getElementById("chartFrame").src =
